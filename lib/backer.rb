@@ -8,7 +8,7 @@ attr_reader :name, :backed_projects
   end 
   
   def back_project(project)
-    @@backer << project
+    @@backed_projects << project
     project.backed_projects << self
   end 
   
