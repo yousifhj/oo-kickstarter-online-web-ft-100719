@@ -9,7 +9,7 @@ attr_reader :name, :backed_projects
   
   def back_project(magic)
     @@magic << magic 
-    magic.backed_projects 
+    magic.backed_projects << self
   end 
   
 end 
