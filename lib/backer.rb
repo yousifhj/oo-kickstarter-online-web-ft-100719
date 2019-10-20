@@ -8,6 +8,7 @@ attr_reader :name, :backed_projects
   end 
   
   def back_project(magic)
+    @@magic << magic 
   end 
   
 end 
