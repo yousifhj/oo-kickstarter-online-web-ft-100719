@@ -7,8 +7,8 @@ attr_reader :title, :backers
     @backers = []
   end 
   
-  def back_project(backer)
-    @@backer << backer 
+  def add_backer(backer)
+    @backers << backer 
     backer.backed_projects << self
   end 
   
